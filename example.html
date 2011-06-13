@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>nautoresize examples</title>
+	
+	<style>
+	body {
+		min-height: 500px;
+	}
+	.row {
+		padding: 10px;
+		margin-bottom: 10px;
+	}
+	.width {
+		width: 300px;
+	}
+	</style>
+</head>
+<body>
+	
+<form name="example-form">
+	<div class="row">
+		<textarea class="nautoresize width"></textarea>
+	</div>
+	<div class="row">
+		<textarea class="nautoresize width">
+			this is some text that goes here and does some stuff for you foo.
+			this is some text that goes here and does some stuff for you foo.
+			this is some text that goes here and does some stuff for you foo.
+			this is some text that goes here and does some stuff for you foo.
+			this is some text that goes here and does some stuff for you foo.
+			this is some text that goes here and does some stuff for you foo.
+			this is some text that goes here and does some stuff for you foo. 
+		</textarea>
+	</div>
+	<div class="row">
+		<textarea class="nautoresize width">this is a line</textarea>
+	</div>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+<script>!window.jQuery && document.write('<script src="jquery-1.4.2.min.js"><\/script>')</script>
+<script src="jquery.nautoresize.js"></script>
+<script>
+$(function(){
+	$('textarea.nautoresize').nselects();
+});
+</script>
+</body>
+</html>
